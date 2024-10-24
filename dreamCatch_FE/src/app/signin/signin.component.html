@@ -1,0 +1,16 @@
+<div class="content card highlight-card card-small " role="main">
+  <h2>Welcome to Dream Catch!</h2>
+</div>
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input type="name" id="name" name="name" [(ngModel)]="user.name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+  
+  <button type="submit">Sign Up</button>
+</form>
+  
